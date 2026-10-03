@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html { -webkit-tap-highlight-color: transparent; }
+body { @apply bg-chalk text-ink font-sans antialiased; }
+
+@layer components {
+  .btn { @apply inline-flex items-center justify-center rounded-md px-5 py-3 font-semibold transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-saffron disabled:opacity-40 disabled:cursor-not-allowed; }
+  .btn-primary { @apply btn bg-saffron text-navy-deep hover:bg-saffron-dark; }
+  .btn-navy { @apply btn bg-navy text-white hover:bg-navy-soft; }
+  .btn-ghost { @apply btn border border-navy/30 text-navy hover:bg-navy/5; }
+  .btn-danger { @apply btn bg-crimson text-white hover:opacity-90; }
+  .field { @apply w-full rounded-md border border-navy/25 bg-white px-3 py-3 text-base focus:border-navy focus:outline-none focus:ring-2 focus:ring-saffron; }
+  .label { @apply mb-1 block text-sm font-medium text-navy; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { animation: none !important; transition: none !important; }
+}

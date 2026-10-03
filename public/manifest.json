@@ -1,0 +1,9 @@
+{
+  "name": "Yoddha Race",
+  "short_name": "Yoddha",
+  "start_url": "/volunteer",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#000000",
+  "icons": [{ "src": "/logo.png", "sizes": "447x447", "type": "image/png" }]
+}
